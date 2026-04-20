@@ -701,13 +701,81 @@
                   ],
                   "disaggregated": false
                 }
+              },
+              {
+                "name": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a859efd19e48d605c4222667c57_genre",
+                "query": {
+                  "datasetName": "e9d47d2f",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "genre_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a86db911996bcfb5b276c2f0a47_genre",
+                "query": {
+                  "datasetName": "11571b37",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "genre_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a89391b1adc9168ebaac6366d11_genre",
+                "query": {
+                  "datasetName": "movies_per_genre",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "genre_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a899a5e1c899f4dfa094b1ba528_genre",
+                "query": {
+                  "datasetName": "high_ratings_by_genre",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "genre_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
               }
             ],
             "spec": {
               "version": 2,
               "frame": {
-                "showTitle": true,
-                "title": "Select Genres"
+                "title": "Select Genres",
+                "showTitle": true
               },
               "widgetType": "filter-single-select",
               "encodings": {
@@ -715,13 +783,24 @@
                   {
                     "fieldName": "genre",
                     "queryName": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a85c54519438a9923a105aa186a_genre"
+                  },
+                  {
+                    "fieldName": "genre",
+                    "queryName": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a859efd19e48d605c4222667c57_genre"
+                  },
+                  {
+                    "fieldName": "genre",
+                    "queryName": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a86db911996bcfb5b276c2f0a47_genre"
+                  },
+                  {
+                    "fieldName": "genre",
+                    "queryName": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a89391b1adc9168ebaac6366d11_genre"
+                  },
+                  {
+                    "fieldName": "genre",
+                    "queryName": "dashboards/01f13a82fc031283b6e1fade7db5409a/datasets/01f13a899a5e1c899f4dfa094b1ba528_genre"
                   }
                 ]
-              }
-            },
-            "specExtensions": {
-              "widgetBackgroundColor": {
-                "light": "#A272B5"
               }
             }
           },
@@ -1553,6 +1632,6 @@
       ],
       "widgetHeaderAlignment": "LEFT"
     },
-    "applyModeEnabled": true
+    "applyModeEnabled": false
   }
 }
